@@ -1,33 +1,18 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-      </button>
-      <a class="navbar-brand" href="#">Pixel Perfect Templates </a>
-    </div>
+<div class="banner">
+  <div class="wrapper">
+    <h1>Pixel Perfect<br> Templates</h1>
+  </div>
+</div>
 
-    <ul class="nav navbar-nav navbar-right">
-      <% if (!user) { %>
-
-        <ul>
-          <li><a href="/signup">Signup</a></li>
-          <li><a href="/login">Login</a></li>
-        </ul>
-
-     <% } else { %>
-
-      <li><a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= user.profile.name %></a>
-        <ul class="dropdown-menu">
-          <li><a href="/profile">Profile</a></li>
-          <li><a href="/logout">Logout</a></li>
-        </ul>
-      </li>
-      <% } %>
-
-    </ul>
-
-
+<div class="nav">
+  <div class="wrapper">
+    <a href="#">Popular</a>
+    <a href="#">Recent</a>
+    <input id="search" type="search" placeholder="iPhone 6+ template">
+    <label for="search">Search</label>
 
   </div>
-</nav>
+
+
+
+</div>
